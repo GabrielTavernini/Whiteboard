@@ -1,6 +1,6 @@
 This project involves a React frontend connected to a NodeJS Backend using Socket.IO
 
-## Available Scripts
+## Available Scripts 🚀
 
 In the project directory, you can run:
 
