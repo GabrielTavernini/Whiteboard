@@ -26,13 +26,13 @@ class Modal extends Component {
 						onChange={e => this.props.handleChange(e, 'author')}/>
 
 					<div className="emojiDiv">
-						<span onClick={this.props.handleEmoji.bind(null, 0)} className="modalButton">😂</span>
-						<span onClick={this.props.handleEmoji.bind(null, 1)} className="modalButton">😎</span>
-						<span onClick={this.props.handleEmoji.bind(null, 2)} className="modalButton">😍</span>
-						<span onClick={this.props.handleEmoji.bind(null, 3)} className="modalButton">👍🏻</span>
-						<span onClick={this.props.handleEmoji.bind(null, 4)} className="modalButton">❤️</span>
-						<span onClick={this.props.handleEmoji.bind(null, 5)} className="modalButton">🍏</span>
-						<span onClick={this.props.handleEmoji.bind(null, 6)} className="modalButton">🚀</span>
+						<span role="img" aria-label="Laugh" onClick={this.props.handleEmoji.bind(null, 0)} className="modalButton">😂</span>
+						<span role="img" aria-label="SunGlasses" onClick={this.props.handleEmoji.bind(null, 1)} className="modalButton">😎</span>
+						<span role="img" aria-label="Heart Eyes" onClick={this.props.handleEmoji.bind(null, 2)} className="modalButton">😍</span>
+						<span role="img" aria-label="Thumb Up" onClick={this.props.handleEmoji.bind(null, 3)} className="modalButton">👍🏻</span>
+						<span role="img" aria-label="Read Heart" onClick={this.props.handleEmoji.bind(null, 4)} className="modalButton">❤️</span>
+						<span role="img" aria-label="Green Apple" onClick={this.props.handleEmoji.bind(null, 5)} className="modalButton">🍏</span>
+						<span role="img" aria-label="Rocket" onClick={this.props.handleEmoji.bind(null, 6)} className="modalButton">🚀</span>
 					</div>
 					<div>
 						<button onClick={this.props.handleClose} className="modalButton btn red">Cancel</button>
