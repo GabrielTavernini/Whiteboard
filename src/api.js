@@ -1,5 +1,5 @@
 import io from 'socket.io-client';
-const  socket = io('http://192.168.0.106:8000');
+const  socket = io('https://worldwhiteboard.herokuapp.com:8000');
 
 function subscribeToTimer(cb, reset) {
   //socket.on('timer', timestamp => cb(null, timestamp));
