@@ -4,8 +4,8 @@ let data = fs.readFileSync('./notes.json');
 let notes = JSON.parse(data);
 
 const port = 8000;
-io.listen(port);
-console.log('listening on port ', port);
+io.listen(process.env.PORT || port);
+console.log('listening on port ', io.port);
 
 
 io.on('connection', (client) => {
