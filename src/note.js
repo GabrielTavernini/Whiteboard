@@ -5,8 +5,8 @@ class Note extends Component {
 	render() {
 		const opacityStyle = {
 			opacity: this.props.opacity,
-			left: this.props.left + 'px',
-			top: this.props.top + 'px'
+			left: this.props.left + '%',
+			top: this.props.top + '%'
 		};
 
 		return (

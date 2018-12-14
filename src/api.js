@@ -1,7 +1,7 @@
 import io from 'socket.io-client';
-const  socket = io('http://localhost:8000')//'https://worldwhiteboard.herokuapp.com');
+const  socket = io('http://192.168.0.106:8000')//'https://worldwhiteboard.herokuapp.com');
 
-function subscribeToTimer(cb, reset) {
+function subscribeToNewNotes(cb, reset) {
   //socket.on('timer', timestamp => cb(null, timestamp));
   //socket.emit('subscribeToTimer', 10000);
   socket.on('newNote', (note) => cb(null, note));
@@ -17,4 +17,4 @@ function getNotes(){
 	socket.emit('getNotes');
 }
 
-export { subscribeToTimer, sendNote, getNotes };
+export { subscribeToNewNotes, sendNote, getNotes };

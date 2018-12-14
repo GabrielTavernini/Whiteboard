@@ -4,27 +4,19 @@ let data = fs.readFileSync('./notes.json');
 let notes = JSON.parse(data);
 
 const port = 8000;
-io.listen(process.env.PORT || port);
-console.log('listening on port ', io.port);
+io.listen(port);
+console.log('listening on port ', port);
 
 
 io.on('connection', (client) => {
 	client.on('newNote', (note, author, left, top, opacity) => {
-		//console.log('New note from client ' + note);
-		//client.emit('newNote', title);
-		
 		let newNote = new Note(note, author, left, top, opacity);
 		notes.push(newNote);
 		let newData = JSON.stringify(notes);
 		fs.writeFile('./notes.json', newData, err => console.log(err));
 
+		console.log("New note")
 		io.sockets.emit('newNote', newNote);
-		//io.sockets.emit('newNote', note, author, getRandomInt(1000).toString(), getRandomInt(1000).toString(),  Math.random().toString());
-
-		// setInterval(() => {
-		// 	console.log(getRandomInt(1000));
-		// 	client.emit('newNote', note + new Date().getSeconds(), author, getRandomInt(1000).toString(), getRandomInt(1000).toString(), Math.random().toString());
-		// }, 1000);
 	});
 
 	client.on('getNotes', () => {
