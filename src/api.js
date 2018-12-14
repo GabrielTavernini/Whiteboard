@@ -1,5 +1,5 @@
 import io from 'socket.io-client';
-const  socket = io('http://192.168.0.106:8000')//'https://worldwhiteboard.herokuapp.com');
+const  socket = io('http://localhost:8000')//'https://worldwhiteboard.herokuapp.com');
 
 function subscribeToNewNotes(cb, reset) {
   socket.on('newNote', (note) => cb(null, note));
