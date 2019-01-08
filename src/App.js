@@ -64,6 +64,7 @@ class App extends Component {
 
 			<div className="App" onClick={this.handleClick}>
 				<p className="PageTitle">The World's WhiteBoard</p>
+				<p className="PageSubTitle">Tap to leave a message</p>
 				<header className="App-header">
 					{this.getList()}
 				</header>

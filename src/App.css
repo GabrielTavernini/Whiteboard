@@ -29,6 +29,13 @@
 	margin: 0px;
 }
 
+.PageSubTitle {
+	font-size: 16px;
+	padding: 0px;
+	margin: 0px;
+	opacity: 0.5;
+}
+
 .NoteList {
 	margin: 5px;
 }
