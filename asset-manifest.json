@@ -1,13 +1,13 @@
 {
   "main.css": "/Whiteboard/static/css/main.4c7b1239.chunk.css",
-  "main.js": "/Whiteboard/static/js/main.a4db6f69.chunk.js",
-  "main.js.map": "/Whiteboard/static/js/main.a4db6f69.chunk.js.map",
+  "main.js": "/Whiteboard/static/js/main.2b4fb029.chunk.js",
+  "main.js.map": "/Whiteboard/static/js/main.2b4fb029.chunk.js.map",
   "static/js/1.5516032f.chunk.js": "/Whiteboard/static/js/1.5516032f.chunk.js",
   "static/js/1.5516032f.chunk.js.map": "/Whiteboard/static/js/1.5516032f.chunk.js.map",
   "runtime~main.js": "/Whiteboard/static/js/runtime~main.ecf1f887.js",
   "runtime~main.js.map": "/Whiteboard/static/js/runtime~main.ecf1f887.js.map",
   "static/css/main.4c7b1239.chunk.css.map": "/Whiteboard/static/css/main.4c7b1239.chunk.css.map",
   "index.html": "/Whiteboard/index.html",
-  "precache-manifest.9fd5a3ed88827c562f6de97f6b370f8e.js": "/Whiteboard/precache-manifest.9fd5a3ed88827c562f6de97f6b370f8e.js",
+  "precache-manifest.bd77c5ff77cbcde140ef0f139025d267.js": "/Whiteboard/precache-manifest.bd77c5ff77cbcde140ef0f139025d267.js",
   "service-worker.js": "/Whiteboard/service-worker.js"
 }
