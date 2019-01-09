@@ -50,7 +50,8 @@ class App extends Component {
 	};
 
 	handleClick = (e) => {
-		this.showModal(e.pageX / window.innerWidth * 100, e.pageY / window.innerHeight * 100)
+		if(e.target.tagName != "A")
+			this.showModal(e.pageX / window.innerWidth * 100, e.pageY / window.innerHeight * 100)
 	}
 
   render() {
@@ -64,7 +65,9 @@ class App extends Component {
 
 			<div className="App" onClick={this.handleClick}>
 				<p className="PageTitle">The World's WhiteBoard</p>
-				<p className="PageSubTitle">Tap to leave a message</p>
+				<p className="PageSubTitle">Tap to leave a message<br/>
+											It will disappear in a few minutes<br/>
+											Click <a href="https://github.com/GabrielTavernini/Whiteboard">here</a> for the code</p>
 				<header className="App-header">
 					{this.getList()}
 				</header>
